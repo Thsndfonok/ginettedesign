@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ginette Design – Referenciák, Before/After, Kapcsolat</title>
+  <meta name="description" content="Modern, gyors, reszponzív bemutatkozó oldal referenciákkal és kapcsolatfelvétellel." />
+  <!-- Tailwind CDN (stabil, nem igényel buildet) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide ikonok (vanilla JS) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    .no-scroll { overflow: hidden; }
+  </style>
+</head>
+<body class="bg-white text-slate-800 antialiased">
+  <div id="app" class="min-h-screen">
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-black/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+  <div class="h-9 w-9 rounded-xl overflow-hidden border border-black/5 shadow-inner">
+    <img src="logo.png" alt="Ginette Design logó" class="w-full h-full object-cover" />
+  </div>
+  <div>
+    <p class="font-semibold leading-none">Ginette Design</p>
+    <p class="text-xs text-slate-500" id="tagline">Virtuális műhely – Praktikus, gyors, szép</p>
+  </div>
+</div>
+
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#szolgaltatasok" class="hover:opacity-70">Szolgáltatások</a>
+          <a href="#portfolio" class="hover:opacity-70">Referenciák</a>
+          <a href="#rolam" class="hover:opacity-70">Rólam</a>
+          <a href="#kapcsolat" class="hover:opacity-70">Kapcsolat</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <button id="themeToggle" aria-label="Témaváltás" class="p-2 rounded-xl border border-black/10 hover:bg-black/5">
+            <i data-lucide="moon" class="w-5 h-5"></i>
+          </button>
+          <a href="#kapcsolat" class="hidden sm:inline-block px-4 py-2 rounded-xl bg-gradient-to-r from-fuchsia-500 via-purple-500 to-blue-500 text-white shadow">Árajánlatot kérek</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 pointer-events-none"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+        <div class="grid lg:grid-cols-2 gap-10 items-center">
+          <div>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
+              Méretes vizuális megoldások, <span class="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-500 via-purple-500 to-blue-500">emberi fókusz</span> mellett.
+            </h1>
+            <p class="mt-6 text-lg text-slate-600 max-w-2xl">
+              Weboldal, termékfotó, márka és arculat – mindez <em>egy</em> helyen. A referencia galériában valós munkákat mutatok.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a href="#portfolio" class="px-5 py-3 rounded-xl bg-gradient-to-r from-fuchsia-500 via-purple-500 to-blue-500 text-white shadow">Munkáim megtekintése</a>
+              <a href="#rolam" class="px-5 py-3 rounded-xl border border-black/10 hover:bg-black/5">Miért én?</a>
+            </div>
+            <dl class="mt-10 grid grid-cols-3 gap-6 max-w-lg text-center">
+              <div class="p-4 rounded-xl bg-black/[0.03]"><dt class="text-sm text-slate-500">Átadás</dt><dd class="text-2xl font-semibold">5–10 nap</dd></div>
+              <div class="p-4 rounded-xl bg-black/[0.03]"><dt class="text-sm text-slate-500">Elégedettség</dt><dd class="text-2xl font-semibold">100%</dd></div>
+              <div class="p-4 rounded-xl bg-black/[0.03]"><dt class="text-sm text-slate-500">Projektek</dt><dd class="text-2xl font-semibold">200+</dd></div>
+            </dl>
+          </div>
+          <div class="relative">
+            <div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border border-black/5">
+              <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1600&auto=format&fit=crop" alt="Hero vizuál" class="w-full h-full object-cover" loading="eager" />
+            </div>
+            <div class="absolute -bottom-6 -left-6 hidden md:block">
+              <div class="p-4 rounded-2xl bg-white/80 backdrop-blur border border-black/5 shadow-lg">
+                <p class="text-sm font-medium">Próbáld ki az alábbi <em>Before/After</em> csúszkát!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SZOLGÁLTATÁSOK -->
+    <section id="szolgaltatasok" class="py-20 border-t border-black/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-end justify-between mb-10">
+          <h2 class="text-3xl sm:text-4xl font-bold">Szolgáltatások</h2>
+          <p class="text-slate-500">Testre szabott csomagok vállalkozásoknak és magánszemélyeknek.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="p-6 rounded-2xl border border-black/5 bg-white shadow-sm hover:shadow-md transition-shadow">
+            <div class="h-11 w-11 rounded-xl bg-gradient-to-r from-fuchsia-500 via-purple-500 to-blue-500 text-white flex items-center justify-center">
+              <i data-lucide="camera" class="w-5 h-5"></i>
+            </div>
+            <h4 class="mt-4 text-lg font-semibold">Fotó & Retus</h4>
+            <p class="mt-2 text-slate-600">Portré, termék, esemény – profi utómunka és gyors átadás.</p>
+          </div>
+          <div class="p-6 rounded-2xl border border-black/5 bg-white shadow-sm hover:shadow-md transition-shadow">
+            <div class="h-11 w-11 rounded-2xl bg-gradient-to-r from-fuchsia-500 via-purple-500 to-blue-500 text-white flex items-center justify-center">
+              <i data-lucide="palette" class="w-5 h-5"></i>
+            </div>
+            <h4 class="mt-4 text-lg font-semibold">Arculattervezés</h4>
+            <p class="mt-2 text-slate-600">Logó, színpaletta, tipó – konzisztens, könnyen használható brand.</p>
+          </div>
+          <div class="p-6 rounded-2xl border border-black/5 bg-white shadow-sm hover:shadow-md transition-shadow">
+            <div class="h-11 w-11 rounded-2xl bg-gradient-to-r from-fuchsia-500 via-purple-500 to-blue-500 text-white flex items-center justify-center">
+              <i data-lucide="sparkles" class="w-5 h-5"></i>
+            </div>
+            <h4 class="mt-4 text-lg font-semibold">Webdesign & Webflow</h4>
+            <p class="mt-2 text-slate-600">Reszponzív, SEO-barát oldalak modern animációkkal és CMS-sel.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEFORE / AFTER -->
+    <section class="py-20 bg-gradient-to-b from-black/[0.02] to-transparent">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h3 class="text-2xl sm:text-3xl font-bold mb-6">Before / After</h3>
+        <p class="text-slate-600 mb-6">Húzd a csúszkát, és nézd meg a retus erejét.</p>
+        <div class="relative rounded-2xl overflow-hidden border border-black/5 shadow-lg">
+          <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1600&auto=format&fit=crop" alt="Before" class="w-full h-[360px] object-cover block" />
+          <div id="afterOverlay" class="absolute inset-0" style="clip-path: inset(0 50% 0 0);">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1600&auto=format&fit=crop" alt="After" class="w-full h-[360px] object-cover block" />
+          </div>
+          <input id="baSlider" type="range" min="0" max="100" value="50" aria-label="Before/After csúszka" class="absolute bottom-4 left-1/2 -translate-x-1/2 w-1/2" />
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFÓLIÓ -->
+    <section id="portfolio" class="py-20 border-t border-black/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-8">
+          <div>
+            <h3 class="text-3xl sm:text-4xl font-bold">Referenciák</h3>
+            <p class="text-slate-600">Valódi projektek – kattints a képekre a nagyításhoz.</p>
+          </div>
+          <div id="tagButtons" class="flex flex-wrap gap-2"></div>
+        </div>
+
+        <!-- Nincs feltöltés/blokk -->
+        <div id="grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4"></div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="hidden fixed inset-0 z-[100] bg-black/80 backdrop-blur-sm items-center justify-center p-4">
+      <button id="lbClose" aria-label="Bezárás" class="absolute top-4 right-4 p-2 rounded-xl bg-white/10 text-white hover:bg-white/20">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <button id="lbPrev" aria-label="Előző" class="absolute left-4 p-2 rounded-full bg-white/10 text-white hover:bg-white/20">
+        <i data-lucide="chevron-left" class="w-6 h-6"></i>
+      </button>
+      <figure class="max-w-5xl w-full">
+        <img id="lbImg" src="" alt="" class="w-full max-h-[80vh] object-contain rounded-xl" />
+        <figcaption id="lbCap" class="mt-3 text-center text-white/90"></figcaption>
+      </figure>
+      <button id="lbNext" aria-label="Következő" class="absolute right-4 p-2 rounded-full bg-white/10 text-white hover:bg-white/20">
+        <i data-lucide="chevron-right" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- RÓLAM -->
+    <section id="rolam" class="py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
+        <div class="order-2 lg:order-1">
+          <h3 class="text-3xl sm:text-4xl font-bold mb-4">Rólam</h3>
+          <p class="text-slate-600 leading-relaxed">
+            Több mint 5 éve dolgozom kreatív projektekben – a célom, hogy egyszerre legyen <em>szép</em> és <em>használható</em> minden, ami a kezem közül kikerül. Szeretem a gyors, tiszta folyamatokat és az őszinte kommunikációt.
+          </p>
+          <ul class="mt-6 space-y-3 text-slate-700">
+            <li class="flex items-center gap-3"><span class="h-2 w-2 rounded-full bg-emerald-500 inline-block"></span> Vállalok komplett arculat- és weboldal-projekteket</li>
+            <li class="flex items-center gap-3"><span class="h-2 w-2 rounded-full bg-violet-500 inline-block"></span> Rugalmas együttműködés (óradíj vagy fix csomag)</li>
+            <li class="flex items-center gap-3"><span class="h-2 w-2 rounded-full bg-blue-500 inline-block"></span> Transzparens, írásos ajánlat és ütemezés</li>
+          </ul>
+        </div>
+        <div class="order-1 lg:order-2">
+          <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-black/5 shadow-xl">
+            <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1400&auto=format&fit=crop" alt="Rólam illusztráció" class="w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KAPCSOLAT -->
+    <section id="kapcsolat" class="py-20 border-t border-black/5">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-3xl sm:text-4xl font-bold mb-4">Kapcsolat</h3>
+            <p class="text-slate-600 mb-6">Írj üzenetet, és 24 órán belül válaszolok.</p>
+            <div class="space-y-3">
+              <a href="tel:+36301234567" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-black/10 hover:bg-black/5"><i data-lucide="phone" class="w-4 h-4"></i> Nem elérhető</a>
+              <a href="mailto:hello@lusive.hu" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-black/10 hover:bg-black/5"><i data-lucide="mail" class="w-4 h-4"></i> ginettedesign2025@outlook.com</a>
+              <div class="flex gap-2">
+                <a href="https://instagram.com/thsnd._" class="p-2 rounded-xl border border-black/10 hover:bg-black/5" aria-label="Instagram"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+                <a href="https://www.tiktok.com/@thsndfonok/" class="p-2 rounded-xl border border-black/10 hover:bg-black/5" aria-label="TikTok"><i data-lucide="film" class="w-4 h-4"></i></a>
+              </div>
+            </div>
+          </div>
+          <form class="p-4 rounded-2xl border border-black/5 bg-white shadow-sm" name="kapcsolat" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="kapcsolat" />
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm mb-1">Név</label>
+                <input required name="name" class="w-full px-3 py-2 rounded-xl border border-black/10 bg-transparent" />
+              </div>
+              <div>
+                <label class="block text-sm mb-1">Email</label>
+                <input required type="email" name="email" class="w-full px-3 py-2 rounded-xl border border-black/10 bg-transparent" />
+              </div>
+              <div class="sm:col-span-2">
+                <label class="block text-sm mb-1">Üzenet</label>
+                <textarea required name="message" rows="5" class="w-full px-3 py-2 rounded-xl border border-black/10 bg-transparent"></textarea>
+              </div>
+            </div>
+            <div class="mt-4 flex items-center justify-between">
+              <button type="submit" class="px-5 py-3 rounded-xl bg-gradient-to-r from-fuchsia-500 via-purple-500 to-blue-500 text-white shadow">Üzenet küldése</button>
+              <span class="text-xs text-slate-500"></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-10 border-t border-black/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-sm text-slate-500">© <span id="year"></span> Ginette Design. Minden jog fenntartva.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- LOGIKA (vanilla JS) -->
+  <script>
+    // ---- Alapadatok ----
+    const BRAND = {
+      name: 'Ginette Design',
+      phone: 'Nem elérhető',
+      email: 'ginettedesign2025@outlook.com',
+      instagram: 'https://instagram.com/thsnd._',
+      facebook: 'https://www.tiktok.com/@thsndfonok/',
+    };
+    const LS_THEME = 'lusive_theme';
+
+    const defaultItems = [
+      { src: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1200&auto=format&fit=crop', title: 'Digitális portré retus', tags: ['portré','retus'] },
+      { src: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=1200&auto=format&fit=crop', title: 'Termékfotó – lifestyle', tags: ['termék','lifestyle'] },
+      { src: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=1200&auto=format&fit=crop', title: 'UI/UX képernyőterv', tags: ['ui/ux','web'] },
+      { src: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop', title: 'Landing oldal redesign', tags: ['web','landing'] },
+      { src: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop', title: 'Márkaillusztráció', tags: ['grafika','illusztráció'] },
+      { src: 'https://images.unsplash.com/photo-1460353581641-37baddab0fa2?q=80&w=1200&auto=format&fit=crop', title: 'Esküvői pillanatkép', tags: ['portré','esemény'] },
+      { src: 'https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?q=80&w=1200&auto=format&fit=crop', title: 'Studio setup', tags: ['termék','stúdió'] },
+    ];
+
+    // ---- Segéd ----
+    const $ = (sel) => document.querySelector(sel);
+
+    // ---- Ikonok renderelése ----
+    function renderIcons() { if (window.lucide) window.lucide.createIcons(); }
+
+    // ---- Év a láblécben ----
+    $('#year').textContent = new Date().getFullYear();
+
+    // ---- Dark mód ----
+    const root = document.documentElement;
+    const themeToggle = $('#themeToggle');
+    function setTheme(dark) {
+      const header = document.querySelector('header');
+      if (dark) {
+        root.classList.add('dark');
+        document.body.classList.add('bg-slate-950','text-slate-100');
+        header.classList.remove('bg-white/70'); header.classList.add('bg-slate-950/70');
+        localStorage.setItem(LS_THEME,'dark');
+        themeToggle.innerHTML = '<i data-lucide="sun" class="w-5 h-5"></i>';
+      } else {
+        root.classList.remove('dark');
+        document.body.classList.remove('bg-slate-950','text-slate-100');
+        header.classList.remove('bg-slate-950/70'); header.classList.add('bg-white/70');
+        localStorage.setItem(LS_THEME,'light');
+        themeToggle.innerHTML = '<i data-lucide="moon" class="w-5 h-5"></i>';
+      }
+      renderIcons();
+    }
+    setTheme(localStorage.getItem(LS_THEME) === 'dark');
+    themeToggle.addEventListener('click', () => setTheme(!root.classList.contains('dark')));
+
+    // ---- Before/After ----
+    const baSlider = $('#baSlider');
+    const afterOverlay = $('#afterOverlay');
+    baSlider.addEventListener('input', (e) => {
+      const v = parseInt(e.target.value, 10);
+      afterOverlay.style.clipPath = `inset(0 ${100 - v}% 0 0)`;
+    });
+
+    // ---- Portfólió (csak fix képek) ----
+    let items = [...defaultItems];
+
+    function getAllTags() {
+      const s = new Set();
+      items.forEach(i => (i.tags || []).forEach(t => s.add(t)));
+      return ['Mind', ...Array.from(s)];
+    }
+
+    let currentFilter = 'Mind';
+    const grid = $('#grid');
+    const tagButtons = $('#tagButtons');
+
+    function renderTags() {
+      tagButtons.innerHTML = '';
+      getAllTags().forEach(t => {
+        const b = document.createElement('button');
+        b.textContent = t;
+        b.className = 'px-3 py-1.5 rounded-full text-sm border ' +
+          (t===currentFilter ? 'bg-slate-900 text-white border-transparent' : 'border-black/10 hover:bg-black/5');
+        b.addEventListener('click', () => { currentFilter = t; renderTags(); renderGrid(); });
+        tagButtons.appendChild(b);
+      });
+    }
+
+    function visibleItems() {
+      return currentFilter === 'Mind' ? items : items.filter(i => (i.tags || []).includes(currentFilter));
+    }
+
+    function renderGrid() {
+      grid.innerHTML = '';
+      visibleItems().forEach((it, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'group relative aspect-square overflow-hidden rounded-2xl border border-black/5';
+        btn.innerHTML = `
+          <img src="${it.src}" alt="${it.title}" class="w-full h-full object-cover" loading="lazy" />
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-3 opacity-0 group-hover:opacity-100 transition-opacity text-left">
+            <p class="text-white text-sm font-medium drop-shadow">${it.title || ''}</p>
+            <p class="text-white/80 text-xs drop-shadow">${(it.tags||[]).join(', ')}</p>
+          </div>`;
+        btn.addEventListener('click', () => openLightbox(idx));
+        grid.appendChild(btn);
+      });
+    }
+
+    renderTags();
+    renderGrid();
+
+    // ---- Lightbox ----
+    const lightbox = $('#lightbox');
+    const lbImg = $('#lbImg');
+    const lbCap = $('#lbCap');
+    const lbClose = $('#lbClose');
+    const lbPrev = $('#lbPrev');
+    const lbNext = $('#lbNext');
+    let lbIndex = 0;
+
+    function openLightbox(idx) {
+      lbIndex = idx;
+      const v = visibleItems()[lbIndex];
+      lbImg.src = v.src; lbCap.textContent = v.title || '';
+      lightbox.classList.remove('hidden');
+      lightbox.classList.add('flex');
+      document.body.classList.add('no-scroll');
+      renderIcons();
+    }
+    function closeLightbox() {
+      lightbox.classList.add('hidden');
+      lightbox.classList.remove('flex');
+      document.body.classList.remove('no-scroll');
+    }
+    function prev() { lbIndex = (lbIndex - 1 + visibleItems().length) % visibleItems().length; openLightbox(lbIndex); }
+    function next() { lbIndex = (lbIndex + 1) % visibleItems().length; openLightbox(lbIndex); }
+
+    lbClose.addEventListener('click', closeLightbox);
+    lbPrev.addEventListener('click', () => prev());
+    lbNext.addEventListener('click', () => next());
+    window.addEventListener('keydown', (e) => {
+      if (lightbox.classList.contains('hidden')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') prev();
+      if (e.key === 'ArrowRight') next();
+    });
+
+    // ---- Első ikon render ----
+    renderIcons();
+  </script>
+</body>
+</html>

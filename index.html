@@ -19,14 +19,14 @@
     <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-black/5">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <div class="flex items-center gap-3">
-  <div class="h-9 w-9 rounded-xl overflow-hidden border border-black/5 shadow-inner">
-    <img src="logo.png" alt="Ginette Design logó" class="w-full h-full object-cover" />
-  </div>
-  <div>
-    <p class="font-semibold leading-none">Ginette Design</p>
-    <p class="text-xs text-slate-500" id="tagline">Virtuális műhely – Praktikus, gyors, szép</p>
-  </div>
-</div>
+          <div class="h-9 w-9 rounded-xl overflow-hidden border border-black/5 shadow-inner">
+            <img src="logo.png" alt="Ginette Design logó" class="w-full h-full object-cover" />
+          </div>
+          <div>
+            <p class="font-semibold leading-none">Ginette Design</p>
+            <p class="text-xs text-slate-500" id="tagline">Virtuális műhely – Praktikus, gyors, szép</p>
+          </div>
+        </div>
 
         <nav class="hidden md:flex items-center gap-6 text-sm">
           <a href="#szolgaltatasok" class="hover:opacity-70">Szolgáltatások</a>
@@ -53,7 +53,7 @@
               Méretes vizuális megoldások, <span class="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-500 via-purple-500 to-blue-500">emberi fókusz</span> mellett.
             </h1>
             <p class="mt-6 text-lg text-slate-600 max-w-2xl">
-              Weboldal, termékfotó, márka és arculat – mindez <em>egy</em> helyen. A referencia galériában nem saját képek vannak, amikor felvetted felem a kapcsolatot kérés szerint küldök szivesen!
+              Weboldal, termékfotó, márka és arculat – mindez <em>egy</em> helyen. A referencia galériában példa képek vannak; kapcsolatfelvétel után saját referenciákat is küldök.
             </p>
             <div class="mt-8 flex flex-wrap gap-3">
               <a href="#portfolio" class="px-5 py-3 rounded-xl bg-gradient-to-r from-fuchsia-500 via-purple-500 to-blue-500 text-white shadow">Munkáim megtekintése</a>
@@ -133,12 +133,11 @@
         <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-8">
           <div>
             <h3 class="text-3xl sm:text-4xl font-bold">Referenciák</h3>
-            <p class="text-slate-600">Példa Projektek – kattints a képekre a nagyításhoz.</p>
+            <p class="text-slate-600">Példa projektek – kattints a képekre a nagyításhoz.</p>
           </div>
           <div id="tagButtons" class="flex flex-wrap gap-2"></div>
         </div>
 
-        <!-- Nincs feltöltés/blokk -->
         <div id="grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4"></div>
       </div>
     </section>
@@ -190,16 +189,26 @@
             <h3 class="text-3xl sm:text-4xl font-bold mb-4">Kapcsolat</h3>
             <p class="text-slate-600 mb-6">Írj üzenetet, és 24 órán belül válaszolok.</p>
             <div class="space-y-3">
-              <a href="tel:+36301234567" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-black/10 hover:bg-black/5"><i data-lucide="phone" class="w-4 h-4"></i> Nem elérhető</a>
-              <a href="mailto:hello@lusive.hu" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-black/10 hover:bg-black/5"><i data-lucide="mail" class="w-4 h-4"></i> ginettedesign2025@outlook.com</a>
+              <a href="#" onclick="return false;" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-black/10 hover:bg-black/5"><i data-lucide="phone" class="w-4 h-4"></i> Nem elérhető</a>
+              <a href="mailto:ginettedesign2025@outlook.com" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-black/10 hover:bg-black/5"><i data-lucide="mail" class="w-4 h-4"></i> ginettedesign2025@outlook.com</a>
               <div class="flex gap-2">
                 <a href="https://instagram.com/thsnd._" class="p-2 rounded-xl border border-black/10 hover:bg-black/5" aria-label="Instagram"><i data-lucide="instagram" class="w-4 h-4"></i></a>
                 <a href="https://www.tiktok.com/@thsndfonok/" class="p-2 rounded-xl border border-black/10 hover:bg-black/5" aria-label="TikTok"><i data-lucide="film" class="w-4 h-4"></i></a>
               </div>
             </div>
           </div>
-          <form class="p-4 rounded-2xl border border-black/5 bg-white shadow-sm" name="kapcsolat" method="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="kapcsolat" />
+
+          <!-- MŰKÖDŐ KAPCSOLAT FORM – FormSubmit -->
+          <form id="contactForm"
+                class="p-4 rounded-2xl border border-black/5 bg-white shadow-sm"
+                action="https://formsubmit.co/ginettedesign2025@outlook.com"
+                method="POST">
+            <!-- FormSubmit opciók -->
+            <input type="hidden" name="_subject" value="Új üzenet a Ginette Design oldalról">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" id="nextField" name="_next" value="">
+
             <div class="grid sm:grid-cols-2 gap-4">
               <div>
                 <label class="block text-sm mb-1">Név</label>
@@ -214,9 +223,12 @@
                 <textarea required name="message" rows="5" class="w-full px-3 py-2 rounded-xl border border-black/10 bg-transparent"></textarea>
               </div>
             </div>
-            <div class="mt-4 flex items-center justify-between">
-              <button type="submit" class="px-5 py-3 rounded-xl bg-gradient-to-r from-fuchsia-500 via-purple-500 to-blue-500 text-white shadow">Üzenet küldése</button>
-              <span class="text-xs text-slate-500"></span>
+
+            <div class="mt-4 flex items-center gap-3">
+              <button id="contactSubmit" type="submit" class="px-5 py-3 rounded-xl bg-gradient-to-r from-fuchsia-500 via-purple-500 to-blue-500 text-white shadow">
+                Üzenet küldése
+              </button>
+              <span id="contactStatus" class="text-sm text-slate-500"></span>
             </div>
           </form>
         </div>
@@ -234,13 +246,6 @@
   <!-- LOGIKA (vanilla JS) -->
   <script>
     // ---- Alapadatok ----
-    const BRAND = {
-      name: 'Ginette Design',
-      phone: 'Nem elérhető',
-      email: 'ginettedesign2025@outlook.com',
-      instagram: 'https://instagram.com/thsnd._',
-      facebook: 'https://www.tiktok.com/@thsndfonok/',
-    };
     const LS_THEME = 'lusive_theme';
 
     const defaultItems = [
@@ -377,6 +382,31 @@
       if (e.key === 'ArrowLeft') prev();
       if (e.key === 'ArrowRight') next();
     });
+
+    // ---- Kapcsolat űrlap UX + vissza a saját oldalra ----
+    (function () {
+      const form = document.getElementById('contactForm');
+      const btn  = document.getElementById('contactSubmit');
+      const msg  = document.getElementById('contactStatus');
+      const next = document.getElementById('nextField');
+
+      if (!form) return;
+      form.addEventListener('submit', function () {
+        // visszairányítás ugyanide „köszi” hash-sel
+        next.value = window.location.href.split('#')[0] + '#koszi';
+        if (btn) { btn.disabled = true; btn.style.opacity = '0.7'; }
+        if (msg)  { msg.textContent = 'Küldés folyamatban...'; }
+      });
+
+      window.addEventListener('load', function () {
+        if (location.hash === '#koszi') {
+          if (msg) msg.textContent = 'Köszönöm! Az üzenet elment, hamarosan válaszolok.';
+          if (btn) { btn.disabled = false; btn.style.opacity = '1'; }
+          form.reset();
+          history.replaceState(null, '', window.location.href.split('#')[0]);
+        }
+      });
+    })();
 
     // ---- Első ikon render ----
     renderIcons();

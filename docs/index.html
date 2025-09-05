@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Szolgáltatások – Discord & Telegram botok, Node.js fejlesztés, Weboldal készítés</title>
+  <meta name="description" content="Discord bot készítés, Node.js fejlesztés, Telegram bot, weboldal készítés és dizájn – mindez modern, gyors és látványos kivitelben." />
+  <meta property="og:title" content="Discord & Telegram botok, Node.js fejlesztés, Weboldal készítés" />
+  <meta property="og:description" content="Modern, animált landing oldal + minden funkció: kapcsolat, árazás, portfólió, sötét mód." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#tartalom">Ugrás a tartalomra</a>
+
+  <header class="site-header" id="header">
+    <div class="container">
+      <a class="brand" href="#hero" aria-label="Főoldal">Ginette<span>Design</span></a>
+      <nav class="nav" aria-label="Fő">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="menu">☰</button>
+        <ul id="menu" class="nav__list">
+          <li><a href="#szolgaltatasok">Szolgáltatások</a></li>
+          <li><a href="#projektek">Projektek</a></li>
+          <li><a href="#arak">Árak</a></li>
+          <li><a href="#folyamat">Folyamat</a></li>
+          <li><a href="#kapcsolat">Kapcsolat</a></li>
+          <li><button id="themeToggle" class="theme-toggle" aria-label="Sötét/világos mód váltása">🌓</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="tartalom">
+    <section id="hero" class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="blob blob--1"></div>
+        <div class="blob blob--2"></div>
+        <div class="noise"></div>
+      </div>
+
+      <div class="container hero__content">
+        <h1 class="hero__title reveal">Full-stack fejlesztés látványos animációkkal</h1>
+        <p class="hero__lead reveal delay-1">
+          Discord & Telegram botok, <strong>Node.js</strong> alapú backendek és
+          <strong>gyors, modern weboldalak</strong> – egy kézből, gondosan megtervezett UX-szel.
+        </p>
+        <div class="hero__cta reveal delay-2">
+          <a class="btn btn--primary" href="#szolgaltatasok">Nézd meg a szolgáltatásokat</a>
+          <a class="btn btn--ghost" href="#kapcsolat">Kérek ajánlatot</a>
+        </div>
+
+        <ul class="floating-icons" aria-hidden="true">
+          <li class="float float--discord" title="Discord">
+            <svg viewBox="0 0 245 240" width="36" height="36" role="img" aria-label="Discord"><path fill="currentColor" d="M104.4 104.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1s-4.5-11.1-10.2-11.1zm36.2 0c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1s-4.5-11.1-10.2-11.1z"/><path fill="currentColor" d="M189.5 20h-134C24.3 20 10 34.3 10 52.6v134.7C10 205.7 24.3 220 42.6 220h113.8l-5.3-18.6 12.8 11.9 12.1 11.2 21.5 19V52.6C197.5 34.3 183.2 20 164.9 20zm-38.1 135.2s-3.6-4.3-6.6-8c13.1-3.7 18.1-11.9 18.1-11.9-4.1 2.7-8 4.6-11.5 5.9-5 2.1-9.8 3.5-14.5 4.3-9.6 1.8-18.4 1.3-25.9-.1-5.7-1.1-10.6-2.7-14.7-4.3-2.3-.9-4.8-2-7.3-3.4-.3-.2-.6-.3-.9-.5-.2-.1-.3-.2-.4-.3-1.8-1-2.8-1.7-2.8-1.7s4.8 8 17.5 11.8c-3 3.8-6.7 8.3-6.7 8.3-22.1-.7-30.5-15.2-30.5-15.2 0-32.1 14.4-58.1 14.4-58.1 14.4-10.9 28.1-10.6 28.1-10.6l1 1.2c-18 5.2-26.3 13.1-26.3 13.1s2.2-1.2 5.9-2.8c10.7-4.7 19.2-6 22.7-6.3.6-.1 1.1-.2 1.7-.2 6.1-.8 13-1 20.2-.2 9.5 1.1 19.7 3.8 30.1 9.3 0 0-7.9-7.5-24.9-12.7l1.4-1.6s13.7-.3 28.1 10.6c0 0 14.4 26 14.4 58.1 0 0-8.5 14.5-30.6 15.2z"/></svg>
+          </li>
+          <li class="float float--node" title="Node.js">
+            <svg viewBox="0 0 256 272" width="34" height="34" role="img" aria-label="Node.js"><path fill="currentColor" d="M128 .3l-24.3 14L24.3 56.8v81.1c0 47 28 90.7 71.7 110.1l32 15 32-15c43.7-19.4 71.7-63.1 71.7-110.1V56.8L152.3 14.3 128 .3z"/></svg>
+          </li>
+          <li class="float float--tg" title="Telegram">
+            <svg viewBox="0 0 240 240" width="30" height="30" role="img" aria-label="Telegram"><path fill="currentColor" d="M120 0C53.7 0 0 53.7 0 120s53.7 120 120 120 120-53.7 120-120S186.3 0 120 0zm58.3 81.7l-19.7 92.7c-1.5 6.4-5.4 8-10.9 5-5.5-2.9-20.5-10-34.1-19.5-6.6-4.5-2.3-7 1.5-11.2 2.7-2.9 37.2-34.1 38-37.1.1-.3.1-1.2-.5-1.7-.5-.5-1.2-.3-1.7-.2-.7.2-11.7 7.4-33.1 21.7-3.1 2.1-5.9 3.1-8.4 3.1-2.7 0-7.8-1.5-11.6-2.7-4.6-1.5-8.2-2.3-8.2-2.3s-3-.7-2.2-3.4c.6-2.1 2.2-3.3 3.7-4.3 17.3-11.3 61-40.1 71.9-46.5 3.4-2 6.6-3 9.4-3 2.2 0 4.1.7 5.5 2 1.7 1.6 1.9 3.7 1.8 5.3-.1 1.4-.4 3.1-.6 4.2z"/></svg>
+          </li>
+        </ul>
+      </div>
+
+      <div class="scroll-down" aria-hidden="true">Görgess</div>
+    </section>
+
+    <section id="szolgaltatasok" class="section">
+      <div class="container">
+        <h2 class="section__title reveal">Szolgáltatások</h2>
+        <p class="section__lead reveal delay-1">Amit vállalok – fókuszban a minőség, a teljesítmény és az átlátható kommunikáció.</p>
+        <div class="cards">
+          <article class="card tilt reveal">
+            <h3>Discord bot készítés</h3>
+            <p>Moderáció, automatizálás, slash commandok, integrációk (YouTube, Stripe, OpenAI stb.).</p>
+            <ul class="tags">
+              <li>TypeScript</li><li>discord.js</li><li>Docker</li>
+            </ul>
+          </article>
+          <article class="card tilt reveal delay-1">
+            <h3>Node.js fejlesztés</h3>
+            <p>API-k, mikro-szolgáltatások, websocketek, skálázható architektúrák.</p>
+            <ul class="tags">
+              <li>Node.js</li><li>Express</li><li>PostgreSQL</li>
+            </ul>
+          </article>
+          <article class="card tilt reveal delay-2">
+            <h3>Telegram bot</h3>
+            <p>Gyors, megbízható botok üzenetkezeléssel, inline menükkel és fizetéssel.</p>
+            <ul class="tags">
+              <li>telegraf</li><li>Stripe</li><li>Redis</li>
+            </ul>
+          </article>
+          <article class="card tilt reveal delay-3">
+            <h3>Weboldal készítés & dizájn</h3>
+            <p>Reszponzív, SEO-barát oldalak animációkkal és modern UI-jal.</p>
+            <ul class="tags">
+              <li>HTML/CSS/JS</li><li>GSAP</li><li>Figma</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projektek" class="section alt">
+      <div class="container">
+        <h2 class="section__title reveal">Kiemelt projektek</h2>
+        <div class="grid reveal">
+          <a href="#" class="project">
+            <span class="project__label">Bot platform</span>
+            <h3>Multiserver Discord bot</h3>
+            <p>Skálázható shardolt architektúra, auditlog & jogosultságkezelés.</p>
+          </a>
+          <a href="#" class="project">
+            <span class="project__label">Web</span>
+            <h3>Animált landing oldal</h3>
+            <p>GSAP + IntersectionObserver, 90+ Lighthouse pontszámok.</p>
+          </a>
+          <a href="#" class="project">
+            <span class="project__label">Automation</span>
+            <h3>Telegram CRM bot</h3>
+            <p>Fizetés, üzenetsablonok, admin panel.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="arak" class="section">
+      <div class="container">
+        <h2 class="section__title reveal">Árazás</h2>
+        <div class="pricing reveal">
+          <div class="price-card tilt">
+            <h3>Induló</h3>
+            <p class="price">25 000 Ft-tól</p>
+            <ul>
+              <li>Egyszerű landing oldal</li>
+              <li>Alap animációk</li>
+              <li>1 kör módosítás</li>
+            </ul>
+          </div>
+          <div class="price-card tilt featured">
+            <div class="ribbon">Legnépszerűbb</div>
+            <h3>Pro</h3>
+            <p class="price">150 000 Ft-tól</p>
+            <ul>
+              <li>Többlapos weboldal</li>
+              <li>Fejlett animációk</li>
+              <li>SEO & teljesítmény tuning</li>
+            </ul>
+          </div>
+          <div class="price-card tilt">
+            <h3>Egyedi</h3>
+            <p class="price">Ajánlat alapján</p>
+            <ul>
+              <li>Komplex bot / rendszer</li>
+              <li>Integrációk</li>
+              <li>Támogatás & SLA</li>
+            </ul>
+          </div>
+        </div>
+        <p class="note reveal">Az árak irányadó jellegűek, ÁFA nélkül. Részletes ajánlatot a projekt áttekintése után adok.</p>
+      </div>
+    </section>
+
+    <section id="folyamat" class="section alt">
+      <div class="container">
+        <h2 class="section__title reveal">Hogyan dolgozom</h2>
+        <ol class="timeline">
+          <li class="reveal"><span>1.</span> Igényfelmérés & brief</li>
+          <li class="reveal delay-1"><span>2.</span> Tervezés & dizájn</li>
+          <li class="reveal delay-2"><span>3.</span> Fejlesztés & integráció</li>
+          <li class="reveal delay-3"><span>4.</span> Tesztelés & átadás</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="kapcsolat" class="section">
+      <div class="container">
+        <h2 class="section__title reveal">Kapcsolat</h2>
+        <p class="section__lead reveal">Írj egy rövid leírást a projektről, és 1 munkanapon belül válaszolok.</p>
+
+        <!-- FORMSubmit integráció -->
+        <form class="contact reveal"
+              method="POST"
+              action="https://formsubmit.co/ginettedesign2025@outlook.com">
+          <!-- beállítások -->
+          <input type="hidden" name="_next" value="https://ginettedesign.dev/koszonom.html">
+          <input type="hidden" name="_subject" value="Új kapcsolatfelvétel – GinetteDesign">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+
+          <!-- honeypot (spam védelem) -->
+          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" />
+
+          <!-- mezők -->
+          <input type="text" name="name" placeholder="Név" required />
+          <input type="email" name="email" placeholder="E-mail" required />
+          <textarea name="message" placeholder="Üzenet" rows="5" required></textarea>
+
+          <div class="contact__actions">
+            <button class="btn btn--primary" type="submit">Küldés</button>
+            <a class="btn btn--ghost" href="https://t.me/heartlessms" target="_blank" rel="noopener">Írj Telegramon</a>
+            <a class="btn btn--ghost" href="https://discord.gg/tVRKxSRCEu" target="_blank" rel="noopener">Írj Discordon</a>
+          </div>
+          <p class="form-note">Az űzenetedet a FormSubmit továbbítja az e-mail címemre.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> GinetteDesign • Minden jog fenntartva.</p>
+      <div class="socials">
+        <a href="#" aria-label="GitHub">GH</a>
+        <a href="#" aria-label="Telegram">TG</a>
+        <a href="#" aria-label="Discord">DC</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

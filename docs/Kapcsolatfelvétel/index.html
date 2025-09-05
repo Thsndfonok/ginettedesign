@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-<meta http-equiv="refresh" content="5; url=../">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Köszönjük az üzeneted!</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="../styles.css" />
   <style>
-    main { min-height: 70vh; display: grid; place-items: center; text-align: center; padding: 2rem; }
-    .card { max-width: 640px; }
-    .card p { color: var(--muted); }
+    main {
+      min-height: 70vh;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .card {
+      max-width: 640px;
+      background: linear-gradient(180deg, var(--card) 0, rgba(255,255,255,.02) 100%);
+      border: 1px solid var(--card-bd);
+      border-radius: var(--radius);
+      padding: 2rem;
+      box-shadow: var(--shadow);
+    }
+    .card h1 {
+      margin-top: 0;
+      font-size: 2rem;
+    }
+    .card p {
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
   </style>
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <a class="brand" href="index.html">Ginette<span>Design</span></a>
+      <a class="brand" href="../">Ginette<span>Design</span></a>
     </div>
   </header>
 
@@ -23,7 +42,7 @@
     <article class="card">
       <h1>Köszönöm!</h1>
       <p>Az üzeneted sikeresen megérkezett. Hamarosan válaszolok az általad megadott e-mail címre.</p>
-      <p><a class="btn btn--primary" href="index.html">Vissza a főoldalra</a></p>
+      <p><a class="btn btn--primary" href="../">Vissza a főoldalra</a></p>
     </article>
   </main>
 
@@ -32,16 +51,14 @@
       <p>© <span id="year"></span> GinetteDesign • Minden jog fenntartva.</p>
     </div>
   </footer>
+
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear()
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // 5 másodperc múlva visszadob a főoldalra
+    setTimeout(() => {
+      window.location.href = "../";
+    }, 5000);
   </script>
-<script>
-  // 3 másodperc múlva visszadob a főoldalra
-  setTimeout(() => {
-    window.location.href = "../";
-  }, 3000);
-</script>
 </body>
 </html>
-
-

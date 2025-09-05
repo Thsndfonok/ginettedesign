@@ -11,6 +11,11 @@
   <meta name="theme-color" content="#0ea5e9" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Font Awesome (Brands) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkfQJbYx1C6lH6VfWZ3Yb9N3v8pXcxs3bJb0iOZ+4qS2XGd1C9r8NQxwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -53,15 +58,16 @@
           <a class="btn btn--ghost" href="#kapcsolat">Kérek ajánlatot</a>
         </div>
 
+        <!-- Lebegő márkaikonok (Font Awesome) -->
         <ul class="floating-icons" aria-hidden="true">
           <li class="float float--discord" title="Discord">
-            <svg viewBox="0 0 245 240" width="36" height="36" role="img" aria-label="Discord"><path fill="currentColor" d="M104.4 104.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1s-4.5-11.1-10.2-11.1zm36.2 0c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1s-4.5-11.1-10.2-11.1z"/><path fill="currentColor" d="M189.5 20h-134C24.3 20 10 34.3 10 52.6v134.7C10 205.7 24.3 220 42.6 220h113.8l-5.3-18.6 12.8 11.9 12.1 11.2 21.5 19V52.6C197.5 34.3 183.2 20 164.9 20zm-38.1 135.2s-3.6-4.3-6.6-8c13.1-3.7 18.1-11.9 18.1-11.9-4.1 2.7-8 4.6-11.5 5.9-5 2.1-9.8 3.5-14.5 4.3-9.6 1.8-18.4 1.3-25.9-.1-5.7-1.1-10.6-2.7-14.7-4.3-2.3-.9-4.8-2-7.3-3.4-.3-.2-.6-.3-.9-.5-.2-.1-.3-.2-.4-.3-1.8-1-2.8-1.7-2.8-1.7s4.8 8 17.5 11.8c-3 3.8-6.7 8.3-6.7 8.3-22.1-.7-30.5-15.2-30.5-15.2 0-32.1 14.4-58.1 14.4-58.1 14.4-10.9 28.1-10.6 28.1-10.6l1 1.2c-18 5.2-26.3 13.1-26.3 13.1s2.2-1.2 5.9-2.8c10.7-4.7 19.2-6 22.7-6.3.6-.1 1.1-.2 1.7-.2 6.1-.8 13-1 20.2-.2 9.5 1.1 19.7 3.8 30.1 9.3 0 0-7.9-7.5-24.9-12.7l1.4-1.6s13.7-.3 28.1 10.6c0 0 14.4 26 14.4 58.1 0 0-8.5 14.5-30.6 15.2z"/></svg>
+            <i class="fa-brands fa-discord" aria-hidden="true"></i>
           </li>
           <li class="float float--node" title="Node.js">
-            <svg viewBox="0 0 256 272" width="34" height="34" role="img" aria-label="Node.js"><path fill="currentColor" d="M128 .3l-24.3 14L24.3 56.8v81.1c0 47 28 90.7 71.7 110.1l32 15 32-15c43.7-19.4 71.7-63.1 71.7-110.1V56.8L152.3 14.3 128 .3z"/></svg>
+            <i class="fa-brands fa-node-js" aria-hidden="true"></i>
           </li>
           <li class="float float--tg" title="Telegram">
-            <svg viewBox="0 0 240 240" width="30" height="30" role="img" aria-label="Telegram"><path fill="currentColor" d="M120 0C53.7 0 0 53.7 0 120s53.7 120 120 120 120-53.7 120-120S186.3 0 120 0zm58.3 81.7l-19.7 92.7c-1.5 6.4-5.4 8-10.9 5-5.5-2.9-20.5-10-34.1-19.5-6.6-4.5-2.3-7 1.5-11.2 2.7-2.9 37.2-34.1 38-37.1.1-.3.1-1.2-.5-1.7-.5-.5-1.2-.3-1.7-.2-.7.2-11.7 7.4-33.1 21.7-3.1 2.1-5.9 3.1-8.4 3.1-2.7 0-7.8-1.5-11.6-2.7-4.6-1.5-8.2-2.3-8.2-2.3s-3-.7-2.2-3.4c.6-2.1 2.2-3.3 3.7-4.3 17.3-11.3 61-40.1 71.9-46.5 3.4-2 6.6-3 9.4-3 2.2 0 4.1.7 5.5 2 1.7 1.6 1.9 3.7 1.8 5.3-.1 1.4-.4 3.1-.6 4.2z"/></svg>
+            <i class="fa-brands fa-telegram" aria-hidden="true"></i>
           </li>
         </ul>
       </div>
@@ -183,17 +189,17 @@
         <h2 class="section__title reveal">Kapcsolat</h2>
         <p class="section__lead reveal">Írj egy rövid leírást a projektről, és 1 munkanapon belül válaszolok.</p>
 
-        <!-- FORMSubmit integráció -->
+        <!-- FormSubmit integráció -->
         <form class="contact reveal"
               method="POST"
               action="https://formsubmit.co/ginettedesign2025@outlook.com">
           <!-- beállítások -->
-          <input type="hidden" name="_next" value="https://ginettedesign.dev/index.html">
+          <input type="hidden" name="_next" value="fooldal/">
           <input type="hidden" name="_subject" value="Új kapcsolatfelvétel – GinetteDesign">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
 
-          <!-- honeypot (spam védelem) -->
+          <!-- Honeypot (spam védelem) -->
           <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" />
 
           <!-- mezők -->
@@ -206,7 +212,7 @@
             <a class="btn btn--ghost" href="https://t.me/heartlessms" target="_blank" rel="noopener">Írj Telegramon</a>
             <a class="btn btn--ghost" href="https://discord.gg/tVRKxSRCEu" target="_blank" rel="noopener">Írj Discordon</a>
           </div>
-          <p class="form-note">Az űzenetedet a FormSubmit továbbítja az e-mail címemre.</p>
+          <p class="form-note">Az üzenetedet a FormSubmit továbbítja az e-mail címemre.</p>
         </form>
       </div>
     </section>
@@ -226,4 +232,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
